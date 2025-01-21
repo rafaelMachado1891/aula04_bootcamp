@@ -12,6 +12,7 @@ profile: 'northwind'
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
 model-paths: ["models"]
+docs-paths: ["docs"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
 seed-paths: ["seeds"]
@@ -32,5 +33,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   northwind:
     # Config indicated by + and applies to all files under models/example/
-    example:
+    staging:
       +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +schema: 'gold'
+      +materialzed: view
