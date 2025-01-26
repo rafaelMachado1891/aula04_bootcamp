@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+  pgadmin:
+   image: dpage/pgadmin
+   environment:
+     PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+     PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+   ports:
+    - '8080:80'
+
+  projeto-dbt:
+    build:
+      context: .
+      dockerfile: dockerfile
+    environment:
+      dbt_profiles: /src/profiles.yml
+    volumes:
+     - ./src:/src
+    depends_on:
+     - pgadmin
+    stdin_open: true
+    tty: true
