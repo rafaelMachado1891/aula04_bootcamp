@@ -1,4 +1,4 @@
--- total de vendas para o ano de 1997
+
 
 with orders as (
     select 
@@ -26,5 +26,4 @@ total_sales_1997 as (
         extract(year from o.order_date) = 1997
 )
 
-select total_sales
-from  total_sales_1997
+select total_sales from total_sales_1997
