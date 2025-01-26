@@ -4,4 +4,4 @@ WORKDIR /src
 COPY . /src
 RUN poetry install --no-root
 WORKDIR /src/northwind
-CMD ["dbt", "run"]
+CMD ["dbt-postgres", "run"]
