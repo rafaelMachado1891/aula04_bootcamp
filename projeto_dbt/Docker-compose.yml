@@ -2,22 +2,33 @@ version: '3.9'
 
 services:
   pgadmin:
-      container_name: pgadmin
-      image: dpage/pgadmin4
-      environment:
-        PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
-        PGADMIN_DEFAULT_PASSWORD: postgres
-        PGADMIN_LISTEN_PORT: 5050
-        PGADMIN_CONFIG_SERVER_MODE: 'False'
-      ports:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@localhost.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_LISTEN_PORT: 5050
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
       - 5050:5050
-
+    networks:
+      - app-network  # Agora 'app-network' está corretamente indicado aqui
 
   projeto-dbt:
     build:
       context: .
       dockerfile: Dockerfile
     environment:
-      dbt_profiles: /src/profiles.yml
+      DBT_Project_DIR: northwind/ # Corrigido para apontar o diretório correto
+    env_file:
+      - .env  # Corrigido para usar uma lista de arquivos .env
     volumes:
-     - ./src:/src
+      - ./src:/src  # Corrigido para montar ./src no caminho esperado
+    working_dir: /northwind  # Define o diretório de trabalho do container
+    command: dbt run
+    networks:
+      - app-network  # Aqui você também deve referenciar o 'app-network'
+
+networks:
+  app-network:  # Aqui você precisa definir a rede 'app-network'
+    driver: bridge
