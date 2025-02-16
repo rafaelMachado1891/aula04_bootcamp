@@ -14,7 +14,7 @@ services:
       - ./northwind.sql:/docker-entrypoint-initdb.d/northwind.sql
       - ./files:/files
     ports:
-      - 55432:5432
+      - 5432:5432
     networks:
       - db
 
@@ -48,7 +48,7 @@ services:
     volumes:
       - .:/app
     environment:
-      DBT_PROFILES_DIR: /app
+      DBT_PROFILES_DIR: /app/projeto_dbt
 
 networks:
   db:
