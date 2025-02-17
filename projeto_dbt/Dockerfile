@@ -10,10 +10,8 @@ COPY . /app
 RUN python -m venv .venv
 
 # Instalar dependências do projeto
-RUN source .venv/Scripts/activate
-
-RUN .venv/pip install -r requirements.txt
+RUN .venv/bin/pip install -r requirements.txt
 
 # Definir o comando de entrada garantindo que o ambiente virtual está ativado
-ENTRYPOINT ["dbt run"]
+ENTRYPOINT ["/bin/sh", "-c", ". .venv/bin/activate && dbt run"]
 
