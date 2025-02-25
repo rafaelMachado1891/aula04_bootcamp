@@ -287,3 +287,222 @@ There are 3 unused configuration paths:
 [0m22:24:52.129056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000189DB3F0950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000189DAF7D6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000189DAF7E990>]}
 [0m22:24:52.130056 [debug] [MainThread]: Flushing usage events
 [0m22:24:53.622946 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:48:12.627802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a05867620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a04d62e40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a050a54f0>]}
+
+
+============================== 00:48:12.646238 | f67a4525-ef56-4730-bce9-02929a9fe41c ==============================
+[0m00:48:12.646238 [info ] [MainThread]: Running with dbt=1.9.2
+[0m00:48:12.649496 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/app', 'debug': 'False', 'warn_error': 'None', 'log_path': '/app/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:48:12.670639 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DB_HOST_PROD'
+[0m00:48:12.674333 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.30650052, "process_in_blocks": "0", "process_kernel_time": 0.484836, "process_mem_max_rss": "89088", "process_out_blocks": "1520", "process_user_time": 4.89887}
+[0m00:48:12.677715 [debug] [MainThread]: Command `dbt run` failed at 00:48:12.677256 after 0.31 seconds
+[0m00:48:12.680812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a04b3ddf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a048b3770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a04421be0>]}
+[0m00:48:12.683056 [debug] [MainThread]: Flushing usage events
+[0m00:48:13.933835 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:53:01.652612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee489fae70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee48644b60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee48618530>]}
+
+
+============================== 00:53:01.669012 | c2605d5f-1581-43f5-97ca-b5adc094e0ca ==============================
+[0m00:53:01.669012 [info ] [MainThread]: Running with dbt=1.9.2
+[0m00:53:01.672229 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/app', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/app/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:53:01.695877 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DB_USER_PROD'
+[0m00:53:01.699723 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.21530727, "process_in_blocks": "0", "process_kernel_time": 0.548558, "process_mem_max_rss": "88944", "process_out_blocks": "1520", "process_user_time": 4.530689}
+[0m00:53:01.702269 [debug] [MainThread]: Command `dbt run` failed at 00:53:01.701960 after 0.22 seconds
+[0m00:53:01.704596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee484a4620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee48242cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee482430e0>]}
+[0m00:53:01.706939 [debug] [MainThread]: Flushing usage events
+[0m00:53:02.694905 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:56:07.016062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbf7802c3b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbf783f8530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbf77ddac60>]}
+
+
+============================== 00:56:07.031413 | 14935e31-72c3-4585-8574-ec649da7fd20 ==============================
+[0m00:56:07.031413 [info ] [MainThread]: Running with dbt=1.9.2
+[0m00:56:07.036291 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/app', 'log_path': '/app/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:56:07.060326 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DB_USER_PROD'
+[0m00:56:07.065079 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.21360049, "process_in_blocks": "0", "process_kernel_time": 0.46775, "process_mem_max_rss": "88932", "process_out_blocks": "1520", "process_user_time": 4.458555}
+[0m00:56:07.068020 [debug] [MainThread]: Command `dbt run` failed at 00:56:07.067612 after 0.22 seconds
+[0m00:56:07.070427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbf78685cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbf77f704d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbf77edeff0>]}
+[0m00:56:07.072907 [debug] [MainThread]: Flushing usage events
+[0m00:56:07.905701 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:58:20.143144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fd7ac0500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fd7ac0b60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fd9559370>]}
+
+
+============================== 00:58:20.165200 | 3f3b0df5-9455-477f-9d7d-b009d8c44c6b ==============================
+[0m00:58:20.165200 [info ] [MainThread]: Running with dbt=1.9.2
+[0m00:58:20.170168 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/app/logs', 'profiles_dir': '/app', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m00:58:20.202547 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DB_USER_PROD'
+[0m00:58:20.209556 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.25305527, "process_in_blocks": "0", "process_kernel_time": 0.743943, "process_mem_max_rss": "89036", "process_out_blocks": "1520", "process_user_time": 4.152007}
+[0m00:58:20.212152 [debug] [MainThread]: Command `dbt run` failed at 00:58:20.211858 after 0.26 seconds
+[0m00:58:20.214357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fd75e07a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fd75df200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2fd75df1d0>]}
+[0m00:58:20.216944 [debug] [MainThread]: Flushing usage events
+[0m00:58:21.461553 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:01:37.369231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86ae007590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86ae007140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86ae004500>]}
+
+
+============================== 01:01:37.391083 | 29765cb1-ead1-4db0-a247-81c28d700e2b ==============================
+[0m01:01:37.391083 [info ] [MainThread]: Running with dbt=1.9.2
+[0m01:01:37.394562 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/app', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/app/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m01:01:37.422344 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DB_USER_PROD'
+[0m01:01:37.425952 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.222433, "process_in_blocks": "0", "process_kernel_time": 0.433028, "process_mem_max_rss": "89008", "process_out_blocks": "1520", "process_user_time": 4.269863}
+[0m01:01:37.428741 [debug] [MainThread]: Command `dbt run` failed at 01:01:37.428430 after 0.23 seconds
+[0m01:01:37.430964 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86ada6d8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86adc2dd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f86ade02ff0>]}
+[0m01:01:37.433305 [debug] [MainThread]: Flushing usage events
+[0m01:01:38.509918 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:03:11.394655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f6ff25910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f6f2bbd40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f6eb5d9a0>]}
+
+
+============================== 01:03:11.411402 | cf8dd213-7cc2-49eb-a239-f2d3711a8dfd ==============================
+[0m01:03:11.411402 [info ] [MainThread]: Running with dbt=1.9.2
+[0m01:03:11.414900 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/app', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/app/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m01:03:11.443247 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DB_PORT_PROD'
+[0m01:03:11.450628 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.23489603, "process_in_blocks": "0", "process_kernel_time": 0.517227, "process_mem_max_rss": "89084", "process_out_blocks": "1520", "process_user_time": 4.237284}
+[0m01:03:11.453396 [debug] [MainThread]: Command `dbt run` failed at 01:03:11.453065 after 0.24 seconds
+[0m01:03:11.456053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f6e8ffb00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f6ea1a720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f6e5db500>]}
+[0m01:03:11.458521 [debug] [MainThread]: Flushing usage events
+[0m01:03:12.240093 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:05:38.951662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa65c4a0b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa65de91340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa65c615c70>]}
+
+
+============================== 01:05:38.973834 | b3d0376a-c52d-427e-a57c-32c8773d8eda ==============================
+[0m01:05:38.973834 [info ] [MainThread]: Running with dbt=1.9.2
+[0m01:05:38.977440 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/app/logs', 'profiles_dir': '/app', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m01:05:39.017801 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DB_NAME_PROD'
+[0m01:05:39.021626 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.27676502, "process_in_blocks": "0", "process_kernel_time": 0.431862, "process_mem_max_rss": "88868", "process_out_blocks": "1520", "process_user_time": 4.429097}
+[0m01:05:39.023995 [debug] [MainThread]: Command `dbt run` failed at 01:05:39.023699 after 0.28 seconds
+[0m01:05:39.026378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa65c527ef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa65c65fec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa65bf224b0>]}
+[0m01:05:39.028633 [debug] [MainThread]: Flushing usage events
+[0m01:05:39.911370 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:07:10.215496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd402187e00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd402bfe6c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd402584bc0>]}
+
+
+============================== 01:07:10.230582 | 78a19b67-23ba-4ab6-9113-74ec1cd33e09 ==============================
+[0m01:07:10.230582 [info ] [MainThread]: Running with dbt=1.9.2
+[0m01:07:10.233962 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/app', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/app/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m01:07:10.264835 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DB_SCHEMA_PROD'
+[0m01:07:10.268293 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.23139851, "process_in_blocks": "0", "process_kernel_time": 0.575206, "process_mem_max_rss": "88804", "process_out_blocks": "1520", "process_user_time": 4.147543}
+[0m01:07:10.270760 [debug] [MainThread]: Command `dbt run` failed at 01:07:10.270359 after 0.23 seconds
+[0m01:07:10.273448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4026e3410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd403b60f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd401e44aa0>]}
+[0m01:07:10.276913 [debug] [MainThread]: Flushing usage events
+[0m01:07:11.234948 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:08:59.852104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd284b291c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd283899370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd28500f710>]}
+
+
+============================== 01:08:59.868614 | 5dc30771-8332-4f05-b2c9-0f9b3390d9e8 ==============================
+[0m01:08:59.868614 [info ] [MainThread]: Running with dbt=1.9.2
+[0m01:08:59.871936 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/app', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/app/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m01:08:59.915683 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DB_THREADS_PROD'
+[0m01:08:59.921220 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.25643122, "process_in_blocks": "0", "process_kernel_time": 0.450911, "process_mem_max_rss": "89100", "process_out_blocks": "1520", "process_user_time": 4.539171}
+[0m01:08:59.925141 [debug] [MainThread]: Command `dbt run` failed at 01:08:59.924431 after 0.26 seconds
+[0m01:08:59.928888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd28356b830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd28349cb60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd283902870>]}
+[0m01:08:59.932172 [debug] [MainThread]: Flushing usage events
+[0m01:09:00.857278 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:11:27.541391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26f7dd700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26f7dd520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26f4a0980>]}
+
+
+============================== 01:11:27.563237 | ca6fd4b9-37b7-4e23-a91c-2e7008619639 ==============================
+[0m01:11:27.563237 [info ] [MainThread]: Running with dbt=1.9.2
+[0m01:11:27.566551 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/app', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/app/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m01:11:28.227265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ca6fd4b9-37b7-4e23-a91c-2e7008619639', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26f11f7a0>]}
+[0m01:11:28.408994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ca6fd4b9-37b7-4e23-a91c-2e7008619639', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26fd26f30>]}
+[0m01:11:28.412283 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m01:11:28.686832 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m01:11:28.831339 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m01:11:28.834060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ca6fd4b9-37b7-4e23-a91c-2e7008619639', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26f732690>]}
+[0m01:11:31.709370 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.northwind.staging
+- models.northwind.intermediate
+- models.northwind.marts
+[0m01:11:31.729720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ca6fd4b9-37b7-4e23-a91c-2e7008619639', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26df30620>]}
+[0m01:11:31.889165 [debug] [MainThread]: Wrote artifact WritableManifest to /app/target/manifest.json
+[0m01:11:31.906570 [debug] [MainThread]: Wrote artifact SemanticManifest to /app/target/semantic_manifest.json
+[0m01:11:31.993230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ca6fd4b9-37b7-4e23-a91c-2e7008619639', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26df318b0>]}
+[0m01:11:31.996885 [info ] [MainThread]: Found 433 macros
+[0m01:11:32.000095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ca6fd4b9-37b7-4e23-a91c-2e7008619639', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26df07440>]}
+[0m01:11:32.006313 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m01:11:32.009310 [debug] [MainThread]: Command end result
+[0m01:11:32.101632 [debug] [MainThread]: Wrote artifact WritableManifest to /app/target/manifest.json
+[0m01:11:32.113856 [debug] [MainThread]: Wrote artifact SemanticManifest to /app/target/semantic_manifest.json
+[0m01:11:32.133349 [debug] [MainThread]: Wrote artifact RunExecutionResult to /app/target/run_results.json
+[0m01:11:32.138024 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 4.7959013, "process_in_blocks": "0", "process_kernel_time": 0.552021, "process_mem_max_rss": "101792", "process_out_blocks": "1656", "process_user_time": 8.701863}
+[0m01:11:32.142094 [debug] [MainThread]: Command `dbt run` succeeded at 01:11:32.141581 after 4.80 seconds
+[0m01:11:32.145785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd272afaba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26eb16780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26e353950>]}
+[0m01:11:32.148842 [debug] [MainThread]: Flushing usage events
+[0m01:11:33.234803 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:18:08.813452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e7a88a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e7a89ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e7a8a960>]}
+
+
+============================== 01:18:08.828993 | 1308235e-bce2-41d2-8e3f-2dd3f5c62fa6 ==============================
+[0m01:18:08.828993 [info ] [MainThread]: Running with dbt=1.9.2
+[0m01:18:08.832820 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/app', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/app/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m01:18:09.433580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1308235e-bce2-41d2-8e3f-2dd3f5c62fa6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e6b70080>]}
+[0m01:18:09.654398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1308235e-bce2-41d2-8e3f-2dd3f5c62fa6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e77581d0>]}
+[0m01:18:09.658412 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m01:18:09.949138 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m01:18:10.176556 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m01:18:10.178435 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m01:18:10.181844 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.northwind.staging
+- models.northwind.marts
+- models.northwind.intermediate
+[0m01:18:10.206322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1308235e-bce2-41d2-8e3f-2dd3f5c62fa6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e749d9a0>]}
+[0m01:18:10.366245 [debug] [MainThread]: Wrote artifact WritableManifest to /app/target/manifest.json
+[0m01:18:10.382710 [debug] [MainThread]: Wrote artifact SemanticManifest to /app/target/semantic_manifest.json
+[0m01:18:10.476136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1308235e-bce2-41d2-8e3f-2dd3f5c62fa6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e5f96150>]}
+[0m01:18:10.480113 [info ] [MainThread]: Found 433 macros
+[0m01:18:10.482895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1308235e-bce2-41d2-8e3f-2dd3f5c62fa6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e5f8b7d0>]}
+[0m01:18:10.489565 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m01:18:10.496253 [debug] [MainThread]: Command end result
+[0m01:18:10.574797 [debug] [MainThread]: Wrote artifact WritableManifest to /app/target/manifest.json
+[0m01:18:10.586622 [debug] [MainThread]: Wrote artifact SemanticManifest to /app/target/semantic_manifest.json
+[0m01:18:10.605532 [debug] [MainThread]: Wrote artifact RunExecutionResult to /app/target/run_results.json
+[0m01:18:10.609755 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.9765483, "process_in_blocks": "0", "process_kernel_time": 0.567597, "process_mem_max_rss": "101356", "process_out_blocks": "1656", "process_user_time": 6.104161}
+[0m01:18:10.612697 [debug] [MainThread]: Command `dbt run` succeeded at 01:18:10.612366 after 1.98 seconds
+[0m01:18:10.615059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e76ff0b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e7e36f60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e6b55a60>]}
+[0m01:18:10.618183 [debug] [MainThread]: Flushing usage events
+[0m01:18:12.140677 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:23:15.682135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D8DA5E630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D8E0F2AE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D8E18BC50>]}
+
+
+============================== 22:23:15.697761 | b01621b3-7cbe-4667-9d8e-b775315dbe84 ==============================
+[0m22:23:15.697761 [info ] [MainThread]: Running with dbt=1.9.0-b1
+[0m22:23:15.697761 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\rafad\\Documents\\Repositorios_Git\\projeto_dbt\\logs', 'version_check': 'True', 'profiles_dir': '../', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:23:16.606261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b01621b3-7cbe-4667-9d8e-b775315dbe84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D8E361FD0>]}
+[0m22:23:16.855024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b01621b3-7cbe-4667-9d8e-b775315dbe84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D8DE1D220>]}
+[0m22:23:16.855024 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m22:23:16.923992 [debug] [MainThread]: checksum: 342eadeaabeb3b1e51584f606df2b5b2518c39ec1d5d83f52b4bb1c68a4f38ed, vars: {}, profile: , target: , version: 1.9.0b1
+[0m22:23:17.021589 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+[0m22:23:17.021589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b01621b3-7cbe-4667-9d8e-b775315dbe84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D8DECFF20>]}
+[0m22:23:20.337862 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.northwind.marts
+- models.northwind.staging
+- models.northwind.intermediate
+[0m22:23:20.358904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b01621b3-7cbe-4667-9d8e-b775315dbe84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D8E6CD3D0>]}
+[0m22:23:20.565676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b01621b3-7cbe-4667-9d8e-b775315dbe84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D8F806960>]}
+[0m22:23:20.565676 [info ] [MainThread]: Found 423 macros
+[0m22:23:20.565676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b01621b3-7cbe-4667-9d8e-b775315dbe84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D8F7FBA70>]}
+[0m22:23:20.565676 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m22:23:20.578594 [debug] [MainThread]: Command end result
+[0m22:23:20.633169 [debug] [MainThread]: Command `dbt run` succeeded at 22:23:20.633169 after 5.40 seconds
+[0m22:23:20.634169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D8C136C30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D8F6D2A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026D8E18BC50>]}
+[0m22:23:20.636172 [debug] [MainThread]: Flushing usage events
+[0m22:23:21.733752 [debug] [MainThread]: An error was encountered while trying to flush usage events

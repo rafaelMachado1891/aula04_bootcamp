@@ -48,7 +48,14 @@ services:
     volumes:
       - .:/app
     environment:
-      DBT_PROFILES_DIR: /app/projeto_dbt
+      DB_HOST_PROD: db
+      DB_USER_PROD: user
+      DB_PORT_PROD: 5432
+      DB_NAME_PROD: northwind_dbt
+      DB_SCHEMA_PROD: public
+      DB_THREADS_PROD: 1
+      DB_TYPE_PROD: postgres
+      DBT_PROFILES_DIR: /app
 
 networks:
   db:
