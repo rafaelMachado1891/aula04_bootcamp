@@ -28,8 +28,8 @@ agregate_orders_by_order_detals as (
 
 revenue_total as (
 select
-	 exctract(year from a.order_date) as ano
-	,exctract(month from a.order_date) as mes
+	 EXTRACT(year from a.order_date) as ano
+	,EXTRACT(month from a.order_date) as mes
 	,sum(total_sales) AS total    
 from agregate_orders_by_order_detals a 
 group by
@@ -51,5 +51,5 @@ select
     ,total
     ,total - lag(total) over(partition by ano order by mes) as diferenca_receita
     ,totalytd
-    ,(total / lag(total) over (partition by ano order by mes))-1) * 100 as variacao
+    ,(total / lag(total) over (partition by ano order by mes))-1* 100 as variacao
 from accumulated_revenue

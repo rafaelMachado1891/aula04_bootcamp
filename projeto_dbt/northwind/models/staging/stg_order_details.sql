@@ -1,1 +1,1 @@
-select * from {{ source('northwind_dbt', 'order_details') }}
+select * from {{ source('postgres', 'order_details') }}
